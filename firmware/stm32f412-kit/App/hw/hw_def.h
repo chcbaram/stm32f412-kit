@@ -29,6 +29,18 @@
 #define      HW_CLI_LINE_HIS_MAX    8
 #define      HW_CLI_LINE_BUF_MAX    64
 
+#define _USE_HW_I2C
+#define      HW_I2C_MAX_CH          1
+#define      HW_I2C_CH_EEPROM       _DEF_I2C1
+
+#define _USE_HW_EEPROM
+#define      HW_EEPROM_MAX_SIZE     (8*1024)
+
+
+//-- USE CLI
+//
+#define _USE_CLI_HW_EEPROM          1
+
 
 void logPrintf(const char *fmt, ...);
 void delay(uint32_t time_ms);

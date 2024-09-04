@@ -11,6 +11,9 @@ extern "C" {
 #include "uart.h"
 #include "log.h"
 #include "cli.h"
+#include "i2c.h"
+#include "eeprom.h"
+
 
 bool hwInit(void);
 
