@@ -13,7 +13,8 @@
 #define _USE_HW_SD
 #define _USE_HW_FATFS
 #define _USE_HW_FILES
-
+#define _USE_HW_IMU
+#define _USE_HW_ICM42670
 
 #define _USE_HW_LED
 #define      HW_LED_MAX_CH          1
@@ -37,6 +38,7 @@
 #define _USE_HW_I2C
 #define      HW_I2C_MAX_CH          1
 #define      HW_I2C_CH_EEPROM       _DEF_I2C1
+#define      HW_I2C_CH_IMU          _DEF_I2C1
 
 #define _USE_HW_EEPROM
 #define      HW_EEPROM_MAX_SIZE     (8*1024)
@@ -62,18 +64,20 @@
 #define _USE_CLI_HW_RTC             1
 #define _USE_CLI_HW_SD              1
 #define _USE_CLI_HW_FATFS           1
+#define _USE_CLI_HW_IMU             1
 
 
 typedef enum
 {
   SPI_FLASH_CS,
   SD_CD,
-  GPIO_PIN_MAX,  
+  GPIO_PIN_MAX,
 } GpioPinName_t;
 
 
-void logPrintf(const char *fmt, ...);
-void delay(uint32_t time_ms);
+void     logPrintf(const char *fmt, ...);
+void     delay(uint32_t time_ms);
 uint32_t millis(void);
+uint32_t micros(void);
 
 #endif

@@ -47,6 +47,8 @@ file(GLOB SRC_FILES CONFIGURE_DEPENDS
   App/hw/*.c
   App/hw/src/*.c
 
+  App/hw/src/imu/*.c
+
   # FatFs
   App/hw/src/fatfs/*.c
   App/lib/FatFs/src/*.c
@@ -92,7 +94,7 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
     # Add user defined libraries
 )
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-expansion-to-defined")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-expansion-to-defined -Wno-pedantic")
 
 
 message(${CMAKE_CXX_COMPILER_VERSION})

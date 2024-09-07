@@ -20,6 +20,7 @@ extern "C" {
 #include "sd.h"
 #include "fatfs.h"
 #include "files.h"
+#include "imu.h"
 
 
 bool hwInit(void);
