@@ -46,6 +46,12 @@ file(GLOB SRC_FILES CONFIGURE_DEPENDS
   App/common/src/*.c
   App/hw/*.c
   App/hw/src/*.c
+
+  # FatFs
+  App/hw/src/fatfs/*.c
+  App/lib/FatFs/src/*.c
+  App/lib/FatFs/src/option/syscall.c
+  App/lib/FatFs/src/option/unicode.c   
 )
 
 
@@ -68,6 +74,10 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     App/common/include
     App/hw
     App/hw/include
+
+    # FatFs
+    App/hw/src/fatfs
+    App/lib/FatFs/src      
 )
 
 # Add project symbols (macros)

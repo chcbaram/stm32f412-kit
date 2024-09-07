@@ -28,7 +28,7 @@ bool hwInit(void)
   eepromInit();
   spiFlashInit();
   sdInit();
-  
+  fatfsInit();
 
   return true;
 }

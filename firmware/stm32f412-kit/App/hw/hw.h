@@ -18,6 +18,8 @@ extern "C" {
 #include "gpio.h"
 #include "rtc.h"
 #include "sd.h"
+#include "fatfs.h"
+#include "files.h"
 
 
 bool hwInit(void);

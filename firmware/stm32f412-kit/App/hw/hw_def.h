@@ -11,6 +11,8 @@
 
 
 #define _USE_HW_SD
+#define _USE_HW_FATFS
+#define _USE_HW_FILES
 
 
 #define _USE_HW_LED
@@ -59,6 +61,7 @@
 #define _USE_CLI_HW_SPI_FLASH       1
 #define _USE_CLI_HW_RTC             1
 #define _USE_CLI_HW_SD              1
+#define _USE_CLI_HW_FATFS           1
 
 
 typedef enum
