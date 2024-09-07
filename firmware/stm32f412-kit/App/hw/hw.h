@@ -21,6 +21,7 @@ extern "C" {
 #include "fatfs.h"
 #include "files.h"
 #include "imu.h"
+#include "hdc1080.h"
 
 
 bool hwInit(void);

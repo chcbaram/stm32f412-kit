@@ -15,6 +15,8 @@
 #define _USE_HW_FILES
 #define _USE_HW_IMU
 #define _USE_HW_ICM42670
+#define _USE_HW_HDC1080 
+
 
 #define _USE_HW_LED
 #define      HW_LED_MAX_CH          1
@@ -65,6 +67,8 @@
 #define _USE_CLI_HW_SD              1
 #define _USE_CLI_HW_FATFS           1
 #define _USE_CLI_HW_IMU             1
+#define _USE_CLI_HW_HDC1080         1
+
 
 
 typedef enum

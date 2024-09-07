@@ -31,6 +31,7 @@ bool hwInit(void)
   fatfsInit();
 
   imuInit();
+  hdc1080Init();
 
   return true;
 }
