@@ -10,6 +10,9 @@
 #define _DEF_BOARD_NAME           "STM32F412-KIT-FW"
 
 
+#define _USE_HW_SD
+
+
 #define _USE_HW_LED
 #define      HW_LED_MAX_CH          1
 
@@ -55,11 +58,13 @@
 #define _USE_CLI_HW_EEPROM          1
 #define _USE_CLI_HW_SPI_FLASH       1
 #define _USE_CLI_HW_RTC             1
+#define _USE_CLI_HW_SD              1
 
 
 typedef enum
 {
   SPI_FLASH_CS,
+  SD_CD,
   GPIO_PIN_MAX,  
 } GpioPinName_t;
 

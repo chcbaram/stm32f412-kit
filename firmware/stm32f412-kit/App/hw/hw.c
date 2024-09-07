@@ -27,6 +27,8 @@ bool hwInit(void)
   spiInit();  
   eepromInit();
   spiFlashInit();
+  sdInit();
+  
 
   return true;
 }
