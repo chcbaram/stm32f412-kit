@@ -45,11 +45,16 @@
 #define _USE_HW_SPI_FLASH
 #define      HW_SPI_FLASH_ADDR      0x91000000
 
+#define _USE_HW_RTC
+#define      HW_RTC_BOOT_MODE       RTC_BKP_DR3
+#define      HW_RTC_RESET_BITS      RTC_BKP_DR4
+
 
 //-- USE CLI
 //
 #define _USE_CLI_HW_EEPROM          1
 #define _USE_CLI_HW_SPI_FLASH       1
+#define _USE_CLI_HW_RTC             1
 
 
 typedef enum
