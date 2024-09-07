@@ -8,6 +8,7 @@ bool hwInit(void)
   cliInit();
   logInit();
   ledInit();
+  gpioInit();
   uartInit();
   for (int i=0; i<HW_UART_MAX_CH; i++)
   {
@@ -22,7 +23,9 @@ bool hwInit(void)
   logPrintf("\n");
 
   i2cInit();
+  spiInit();  
   eepromInit();
+  spiFlashInit();
 
   return true;
 }

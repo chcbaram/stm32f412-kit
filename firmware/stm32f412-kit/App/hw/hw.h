@@ -13,7 +13,9 @@ extern "C" {
 #include "cli.h"
 #include "i2c.h"
 #include "eeprom.h"
-
+#include "spi.h"
+#include "spi_flash.h"
+#include "gpio.h"
 
 bool hwInit(void);
 

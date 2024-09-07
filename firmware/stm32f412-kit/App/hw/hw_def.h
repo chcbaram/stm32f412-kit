@@ -36,10 +36,27 @@
 #define _USE_HW_EEPROM
 #define      HW_EEPROM_MAX_SIZE     (8*1024)
 
+#define _USE_HW_SPI
+#define      HW_SPI_MAX_CH          1
+
+#define _USE_HW_GPIO
+#define      HW_GPIO_MAX_CH         GPIO_PIN_MAX
+
+#define _USE_HW_SPI_FLASH
+#define      HW_SPI_FLASH_ADDR      0x91000000
+
 
 //-- USE CLI
 //
 #define _USE_CLI_HW_EEPROM          1
+#define _USE_CLI_HW_SPI_FLASH       1
+
+
+typedef enum
+{
+  SPI_FLASH_CS,
+  GPIO_PIN_MAX,  
+} GpioPinName_t;
 
 
 void logPrintf(const char *fmt, ...);

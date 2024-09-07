@@ -82,6 +82,9 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
     # Add user defined libraries
 )
 
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-expansion-to-defined")
+
+
 message(${CMAKE_CXX_COMPILER_VERSION})
 if(CMAKE_CXX_COMPILER_VERSION VERSION_GREATER_EQUAL 11)
   string(APPEND CMAKE_EXE_LINKER_FLAGS "-Wl,--no-warn-rwx-segments")
