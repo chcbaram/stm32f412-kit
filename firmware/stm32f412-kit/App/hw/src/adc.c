@@ -66,7 +66,8 @@ bool adcInit(void)
   {
     ret = false;
   }    
-
+  is_init = ret;
+  
   logPrintf("[%s] adcInit()\n", is_init ? "OK":"NG");
 
 #if CLI_USE(HW_ADC)
