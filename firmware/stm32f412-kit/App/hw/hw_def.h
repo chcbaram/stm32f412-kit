@@ -58,6 +58,9 @@
 #define      HW_RTC_BOOT_MODE       RTC_BKP_DR3
 #define      HW_RTC_RESET_BITS      RTC_BKP_DR4
 
+#define _USE_HW_ADC                 
+#define      HW_ADC_MAX_CH          ADC_PIN_MAX
+
 
 //-- USE CLI
 //
@@ -68,7 +71,7 @@
 #define _USE_CLI_HW_FATFS           1
 #define _USE_CLI_HW_IMU             1
 #define _USE_CLI_HW_HDC1080         1
-
+#define _USE_CLI_HW_ADC             1
 
 
 typedef enum
@@ -77,6 +80,12 @@ typedef enum
   SD_CD,
   GPIO_PIN_MAX,
 } GpioPinName_t;
+
+typedef enum
+{
+  LIGHT_ADC = 0,
+  ADC_PIN_MAX
+} AdcPinName_t;
 
 
 void     logPrintf(const char *fmt, ...);

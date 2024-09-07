@@ -32,6 +32,7 @@ bool hwInit(void)
 
   imuInit();
   hdc1080Init();
+  adcInit();
 
   return true;
 }

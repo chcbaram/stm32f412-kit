@@ -22,6 +22,7 @@ extern "C" {
 #include "files.h"
 #include "imu.h"
 #include "hdc1080.h"
+#include "adc.h"
 
 
 bool hwInit(void);
